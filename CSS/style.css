@@ -1,9 +1,18 @@
 /* CS465 Lab1 style file */
 
-img {
-  width: 300px;   /* makes image bigger */
-  height: auto;   /* keeps proportions */
+.header-images {
+  display: flex;           /* arrange children in a row */
+  justify-content: center; /* center images horizontally */
+  gap: 20px;               /* space between images */
+  margin-top: 20px;        /* space below the text */
 }
+
+.header-images img {
+  width: 300px;   /* set the size of each image */
+  height: auto;
+  border-radius: 10px; /* optional: rounded corners */
+}
+
 body {
-  background-color: lightblue;  /* changes background color */
+  background-color: rgb(123, 175, 212);  /* changes background color */
 }
