@@ -14,10 +14,10 @@
 }
 
 .about-container {
-  display: flex;              /* side-by-side layout */
-  align-items: center;        /* vertically center the  with image */
-  justify-content: center;    /* center the whole section horizontally */
-  gap: 40px;                  /* space between image and stats */
+  display: flex;               
+  align-items: flex-start;     /* keeps top aligned */
+  justify-content: left;     /* left side whole section */
+  gap: 60px;                   /* space between image + stats */
   padding: 20px;
 }
 
@@ -58,4 +58,43 @@ h3, h2 {
 /* hover effect */
 .hover-image img:hover {
   content: url('../Images/funnydrake.jpg'); /* swap image on hover */
+}
+
+.stats {
+  text-align: left;  /* left align text */
+  justify-content: left;
+  flex: 1;             /* take up remaining space */
+}
+.stats h2 {
+  margin-bottom: 10px;
+  font-size: 2em;
+  text-align: center;
+}
+
+
+.metrics-list {
+  list-style: none; /* removes bullets */
+  padding: 8;
+  margin: 0;
+  text-align: left;  /* keeps items aligned neatly under the centered title */
+  display: inline-block; /* makes the list itself centered */
+}
+
+.highlights {
+  text-align: center;
+  list-style: none;   /* removes bullets */
+  padding: 1;
+  margin: 0;
+}
+.highlights h2 {
+  margin-bottom: 10px;
+  font-size: 2em;
+}
+
+.stats-list {
+  list-style: none;
+  padding: 8;
+  margin: 0;
+  text-align: left;       /* aligns items neatly */
+  display: inline-block;  /* keeps the list centered under the title */
 }
