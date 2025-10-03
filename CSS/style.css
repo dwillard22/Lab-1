@@ -98,3 +98,26 @@ h3, h2 {
   text-align: left;       /* aligns items neatly */
   display: inline-block;  /* keeps the list centered under the title */
 }
+
+.highlights-container {
+  display: flex;
+  flex-direction: column; /* keeps each highlight stacked vertically */
+  gap: 20px; /* space between highlights */
+}
+
+.highlight {
+  display: flex;
+  align-items: center; /* vertically center text with image */
+  gap: 20px; /* space between image and text */
+}
+
+.highlight img {
+  width: 200px;   /* adjust as needed */
+  height: auto;
+  border-radius: 8px; /* optional rounded corners */
+}
+
+.highlight p {
+  max-width: 600px; /* keeps text readable */
+  line-height: 1.5; /* nicer spacing */
+}
